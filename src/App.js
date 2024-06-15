@@ -19,7 +19,7 @@ export default function App() {
           </a>{' '}
           and is{' '}
           <a
-            href='https://github.com/angelicav1/weather-react-app'
+            href='https://github.com/angelicav1/weather-react-forecast'
             target='_blank'
             rel='noopener noreferrer'
           >
