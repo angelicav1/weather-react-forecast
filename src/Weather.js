@@ -32,7 +32,7 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = '45399ad904a6fae950d80c9faddc271c';
+    const apiKey = 'f3009e4852fa0a079dab291dabf020c4';
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -45,7 +45,7 @@ export default function Weather(props) {
             <div className='col-9'>
               <input
                 type='search'
-                placeholder='Enter a city...'
+                placeholder='Enter a city..'
                 className='form-control'
                 autoFocus='on'
                 onChange={handleCityChange}
