@@ -16,14 +16,18 @@ export default function App() {
           >
             Angelica Victoria
           </a>{' '}
-          and is{' '}
+          , it is{' '}
           <a
             href='https://github.com/angelicav1/weather-react-forecast'
             target='_blank'
             rel='noopener noreferrer'
           >
             open-sourced on GitHub
-          </a>
+          </a>{" "}
+          and hosted on {" "}
+<a href="https://verdant-kitten-69f1f2.netlify.app/" target="_blank" rel="noopener noreferrer">
+  Netlify
+</a>
         </footer>
       </div>
     </div>
