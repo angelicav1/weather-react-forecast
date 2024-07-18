@@ -24,17 +24,19 @@ export default function WeatherForecast(props) {
           {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
-                <div className='col' key={index}>
+                <div className='col WeatherForecast-box' key={index}>
                   <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return <></>;
             }
           })}
         </div>
       </div>
     );
   } else {
-    let apiKey = 'f3009e4852fa0a079dab291dabf020c4';
+    let apiKey = '894a2e7aa7f46eeca5d8778f6faa5a5b';
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
